@@ -1,0 +1,4 @@
+{
+  "/api/analyze-scam/route": "app/api/analyze-scam/route.js",
+  "/page": "app/page.js"
+}
