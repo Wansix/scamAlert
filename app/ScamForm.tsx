@@ -45,17 +45,17 @@ export default function ScamForm() {
   };
 
   return (
-    <div className="w-full flex flex-col items-center gap-6 mt-12">
+    <div className="w-full max-w-md mx-auto flex flex-col items-center gap-6">
       <div className="w-72 border border-gray-400 text-center">
-        <div className="py-2 border-b border-gray-400">제목</div>
+        <div className="py-2 border-b border-gray-400">사기 신고 시스템</div>
         <div className="py-2">소개</div>
       </div>
 
       <form onSubmit={handleSubmit} className="flex flex-col items-center w-full gap-4">
-        <div className="w-[300px] bg-yellow-200 flex flex-col items-center p-4">
+        <div className="w-full bg-yellow-200 flex flex-col items-center p-4">
           <div className="text-gray-700 mb-2">입력 폼.</div>
           <textarea
-            className="w-full h-40 bg-yellow-200 border-none outline-none resize-none text-center text-gray-700"
+            className="w-full bg-yellow-200 border-none outline-none resize-none text-center text-gray-700" style={{ height: '300px' }}
             value={inputText}
             onChange={e => setInputText(e.target.value)}
           />

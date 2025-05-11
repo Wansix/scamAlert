@@ -9,8 +9,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" className="h-full">
+      <body style={{ minHeight: '100vh', height: '100%', margin: 0, padding: 0, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>{children}</body>
     </html>
   )
 }
